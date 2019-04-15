@@ -4,10 +4,11 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
             app:startDestination="@id/oneFragment">
 
-    <fragment android:id="@+id/oneFragment" android:name="demo.rlv.cehome.com.navigationcomponents.OneFragment"
+    <fragment android:id="@+id/oneFragment" android:name="com.demo.navigationcomponent.OneFragment"
               android:label="fragment_one" tools:layout="@layout/fragment_one">
         <action android:id="@+id/action_oneFragment_to_twoFragment" app:destination="@id/twoFragment"/>
     </fragment>
-    <fragment android:id="@+id/twoFragment" android:name="demo.rlv.cehome.com.navigationcomponents.TwoFragment"
+    <fragment android:id="@+id/twoFragment" android:name="com.demo.navigationcomponent.TwoFragment"
               android:label="fragment_two" tools:layout="@layout/fragment_two"/>
+    <action android:id="@+id/action_twoFragment_to_oneFragment" app:destination="@id/oneFragment"/>
 </navigation>

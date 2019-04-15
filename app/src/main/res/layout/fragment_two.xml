@@ -3,7 +3,7 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".TwoFragment">
+             tools:context="com.demo.navigationcomponent.TwoFragment">
 
     <RelativeLayout
             android:layout_width="match_parent"
@@ -13,8 +13,8 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_centerInParent="true"
-                android:visibility="gone"
-                android:text="GO TO One" android:id="@+id/button_two"/>
+                android:visibility="visible"
+                android:text="GO TO Three" android:id="@+id/button_two"/>
 
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"

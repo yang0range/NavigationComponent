@@ -1,4 +1,4 @@
-package demo.rlv.cehome.com.navigationcomponents
+package com.demo.navigationcomponent
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
