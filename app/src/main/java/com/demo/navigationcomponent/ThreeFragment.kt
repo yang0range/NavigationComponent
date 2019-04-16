@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_three.*
 
 
 /**
@@ -25,10 +25,8 @@ private val logTag = "ThreeFragment"
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        view?.findViewById<Button>(R.id.button_three)?.setOnClickListener {
-            view?.let {
-                Navigation.findNavController(it).navigate(R.id.fourFragment)
-            }
+        button_three.setOnClickListener {
+                findNavController().navigate(R.id.action_threeFragment_to_fourFragment)
         }
     }
 

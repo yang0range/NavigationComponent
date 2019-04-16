@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/bnav_oneFragment"
+            android:icon="@mipmap/ic_launcher"
+            android:title="One"/>
+    <item
+            android:id="@+id/bnav_twoFragment"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Two"/>
+    <item
+            android:id="@+id/bnav_threeFragment"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Three"/>
+
+    <item
+            android:id="@+id/bnav_fourFragment"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Four"/>
+</menu>

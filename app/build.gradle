@@ -33,7 +33,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     def nav_version = "1.0.0"
-    implementation "android.arch.navigation:navigation-fragment:$nav_version" // use -ktx for Kotlin
-    implementation "android.arch.navigation:navigation-ui:$nav_version" // use -ktx for Kotlin
-
+    //如果我们用的是Kotlin的话一定要改成以下
+    implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version" // use -ktx for Kotlin
+    implementation "android.arch.navigation:navigation-ui-ktx:$nav_version" // use -ktx for Kotlin
+    //如果不是Kotlin的话，则为
+//    implementation "android.arch.navigation:navigation-fragment:$nav_version" // use -ktx for Kotlin
+//    implementation "android.arch.navigation:navigation-ui:$nav_version" // use -ktx for Kotlin
 }

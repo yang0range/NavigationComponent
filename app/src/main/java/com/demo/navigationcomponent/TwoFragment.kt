@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_two.*
 
 
 /**
@@ -25,11 +25,11 @@ class TwoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        view?.findViewById<Button>(R.id.button_two)?.setOnClickListener {
-            view?.let { Navigation.findNavController(it).navigate(R.id.threeFragment)
-            }
+        button_two.setOnClickListener {
+            findNavController().navigate(R.id.action_twoFragment_to_threeFragment)
         }
+        }
+
     }
 
 
-}

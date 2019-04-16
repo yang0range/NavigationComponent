@@ -7,6 +7,14 @@
         android:layout_height="match_parent"
         tools:context="com.demo.navigationcomponent.MainActivity">
 
+    <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_nav_view"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_navigatiion" />
+
     <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
