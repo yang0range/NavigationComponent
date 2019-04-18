@@ -34,6 +34,11 @@ private val LogTags = "ThreeFragment"
         }
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.d(LogTags, "$LogTags-----onCreate")
+    }
+
     override fun onAttach(context: Context?) {
         super.onAttach(context)
         Log.d(LogTags, "$LogTags-----onAttach")
